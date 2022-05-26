@@ -232,7 +232,7 @@ class GeneticAlgorithm(ABC):
                 best.append(minimum)
                 worst.append(maximum)
                 temp = new_gen
-            self.make_graph(best,worst, average_list, fitness)
+            #self.make_graph(best,worst, average_list, fitness)
             print('regular minimum solution')
             print(temp_min_sol2)
             return -1
@@ -321,7 +321,7 @@ class lemark_genetic_algo(GeneticAlgorithm):
             temp = new_gen
         print('lemark minimum solution')
         print(temp_min_sol2)
-        self.make_graph(best,worst, average_list, fitness)        
+        #self.make_graph(best,worst, average_list, fitness)        
         return -1
     
     
@@ -380,5 +380,5 @@ class darwin_genetic_algo(GeneticAlgorithm):
             temp = new_gen
         print('darwin minimum solution')
         print(temp_min_sol2)
-        self.make_graph(best,worst, average_list, fitness)        
+        #self.make_graph(best,worst, average_list, fitness)        
         return -1
